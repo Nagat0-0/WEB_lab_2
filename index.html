@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber shirt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body >
+
+    <header>
+        <img id="navi" src="img/images.png" alt="#">
+        <div class="filters">
+            <label>Категорія:</label>
+            <select id="categoryFilter"></select>
+
+            <label>Ціна (до):</label>
+            <input type="number" id="priceFilter" placeholder="Введіть ціну">
+
+            <button id="applyFilter">Фільтрувати</button>
+        </div>
+    </header>
+
+    <main>
+        
+        <div id="gallery" class="gallery"></div>
+    </main>
+    <!-- Ті самі модалки -->
+    <div id="subscribe-popup" class="subscribe-popup hidden">
+        <p>Підпишіться на повідомлення від нашого сайту!</p>
+        <div class="subscribe-popup__buttons">
+            <button id="subscribe-accept">Підписатись</button>
+            <button id="subscribe-decline">Ні, дякую</button>
+        </div>
+    </div>
+<div id="thanks-modal" class="ad-modal hidden">
+        <div class="ad-modal__content">
+            <p> ДЯКУЄМО ЗА ПІДПИСКУ!</p>
+            <button id="thanks-close-btn" class="ad-modal__close active">Закрити</button>
+        </div>
+    </div>
+
+    <div id="ad-modal" class="ad-modal hidden">
+        <div class="ad-modal__content">
+            <img id="Ads_pictures" src="image/sale.jpg" alt="Reklama">
+            <p> Знижка 10% на першу замовлену футболку</p>
+            <button id="ad-close-btn" class="ad-modal__close" disabled>Закрити (<span id="ad-timer">5</span>с)</button>
+        </div>
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Опис товару</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1 id="productTitle">Назва товару</h1>
+        <button id="back" onclick="goBack()">Назад</button>
+    </header>
+
+    <main>
+        <div class="product-details">
+            <img id="productImage" src="" alt="">
+            <p id="productDescription">Опис товару...</p>
+           
+        </div>
+        <div id="row">
+            <input type="button" value="L" class="item_shirt">
+            <input type="button" value="M" class="item_shirt">
+            <input type="button" value="S" class="item_shirt">
+            <input type="button" value="XL" class="item_shirt">
+            <input type="button" value="2XL" class="item_shirt">
+            <input type="button" value="3XL" class="item_shirt">
+        </div>
+        <div class="product-details">
+        <p id="productPrice">Ціна: </p>
+        </div>
+    </main>
+    <div id="subscribe-popup" class="subscribe-popup hidden">
+        <p>Підпишіться на повідомлення від нашого сайту!</p>
+        <div class="subscribe-popup__buttons">
+            <button id="subscribe-accept">Підписатись</button>
+            <button id="subscribe-decline">Ні, дякую</button>
+        </div>
+    </div>
+
+    <script src="script_1.js"></script>
+</body>
+
+</html>

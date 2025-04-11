@@ -1,0 +1,265 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #d1df11;
+    color: #333;
+    padding: 15px 0;
+    border-bottom: solid rgb(0, 0, 0);
+    box-shadow: 0 4px 35px #333;
+}
+
+#navi {
+    border-radius: 50px;
+}
+
+/* Фільтри */
+.filters {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.filters select,
+.filters button,
+#priceFilter {
+    border-radius: 10px;
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.filters select:focus {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.filters button {
+    background-color: #161515;
+    color: white;
+    transition: .7s;
+}
+
+.filters button:hover {
+    background-color: #ffffff;
+    color: #000;
+}
+
+/* Галерея */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Картки */
+.card {
+    width: 220px;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    transition: 0.6s;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 2px solid #ff6b81;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Опис */
+.card .description {
+    display: none;
+    padding: 10px;
+}
+
+.card.active .description {
+    display: block;
+}
+
+/* Ціна */
+.price {
+    font-weight: bold;
+    color: #ff4757;
+    font-size: 18px;
+}
+
+/* Модальні вікна */
+
+
+/* Кнопка "Назад" */
+#back {
+    border-radius: 10px;
+    border: none;
+    padding: 7px 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#back:hover {
+    color: #f8f8f8;
+    background: #333;
+}
+
+/* Підписка */
+#subscribe {
+    background-color: #2ed573;
+    color: white;
+}
+
+#decline {
+    background-color: #ff4757;
+    color: white;
+}
+
+
+
+/* Сторінка продукту */
+.product-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+.product-details img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#Ads_pictures{
+    width: 30vh;
+    border-radius: 10.5px;
+}
+
+.item_shirt{
+    padding: 10px 20px;
+    border: solid #000 1px;
+    transition: .7s;
+    background-color: #f8f8f8;
+    font-family: bold;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 1vh;
+}
+
+.item_shirt:hover{
+    background-color: #999;
+
+}
+/* Модалка +  Реклама */
+.subscribe-popup {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #fff;
+    border: 2px solid #000;
+    color: #333;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    max-width: 300px;
+}
+
+.subscribe-popup__buttons {
+    margin-top: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#subscribe-accept {
+    background-color: lightgreen;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    transition: .5s;
+}
+
+#subscribe-accept:hover {
+    box-shadow: 2px 2px 30px #333;
+}
+
+#subscribe-decline {
+    background-color: red;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    transition: .5s;
+}
+
+#subscribe-decline:hover {
+    box-shadow: 2px 2px 30px #333;
+}
+
+
+.ad-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    color: #000;
+}
+
+.scroll-none{
+    overflow-y: hidden;
+}
+
+.ad-modal__content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+}
+
+.ad-modal__close {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #999;
+    color: white;
+    border-radius: 6px;
+    cursor: not-allowed;
+}
+
+.ad-modal__close.active {
+    background-color: #d33;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
